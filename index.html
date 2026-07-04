@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Esakki Sathish — Front-End Web Developer</title>
+<meta name="description" content="Portfolio of Esakki Sathish, a front-end web developer building responsive, polished websites with AI-assisted workflows.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="nav-logo">ES<span class="nav-dot">.</span></a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Let's talk</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">// front-end web developer</p>
+      <h1>I build responsive<br>websites, and<br><span class="accent">learn fast.</span></h1>
+      <p class="hero-sub">B.E. ECE student building real front-end projects with HTML, CSS and JavaScript — using AI-assisted workflows to move quicker while staying hands-on with every design decision. Open to freelance and internship opportunities.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-terminal" aria-hidden="true">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="terminal-title">build.log</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <p class="eyebrow">// about</p>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Esakki Sathish</h2>
+        <p>Motivated B.E. Electronics &amp; Communication Engineering student with a strong interest in front-end web development. Passionate about building responsive websites using HTML, CSS and JavaScript, and continuously learning through real-world projects.</p>
+        <p>Currently a 2nd-year student at Narayana Guru College of Engineering, seeking freelance and internship opportunities to strengthen practical skills and take on real client work.</p>
+        <p class="about-meta">Mukkudal, Tirunelveli, Tamil Nadu &nbsp;·&nbsp; Tamil (Native) &nbsp;·&nbsp; English (Working Proficiency)</p>
+      </div>
+      <div class="about-skills">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git &amp; GitHub</span>
+        <span class="tag">Responsive Design</span>
+        <span class="tag">AI-Assisted Dev</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <p class="eyebrow">// projects</p>
+    <h2>Selected work</h2>
+
+    <article class="project-card">
+      <div class="project-media">
+        <div class="project-media-label">video-editor-portfolio</div>
+      </div>
+      <div class="project-info">
+        <h3>Video Editor Portfolio Website</h3>
+        <p>Designed and developed a responsive portfolio website for a video editor, with a clean UI built using HTML, CSS and JavaScript — covering service showcases and a working contact form.</p>
+        <div class="project-tags">
+          <span class="tag tag-mono">HTML</span>
+          <span class="tag tag-mono">CSS</span>
+          <span class="tag tag-mono">JavaScript</span>
+          <span class="tag tag-mono">Responsive Design</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card project-card-placeholder">
+      <div class="project-info">
+        <h3>Your next project</h3>
+        <p>This slot is reserved. Add your next build here — client work, a personal experiment, or anything that shows how you think.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="eyebrow">// contact</p>
+    <h2>Have a project in mind?</h2>
+    <p class="contact-sub">I'm open to freelance work and full-time roles. Tell me what you're building.</p>
+
+    <form class="contact-form" action="https://formsubmit.co/esakkisathish92@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New message from portfolio site">
+      <input type="hidden" name="_next" value="https://your-portfolio-url.vercel.app/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+    </form>
+
+    <div class="contact-socials">
+      <a href="https://github.com/sathish-dev-21" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/esakki-sathish-1959a741b" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:esakkisathish92@gmail.com">Email</a>
+      <a href="tel:+916379867903">+91 63798 67903</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built by Esakki Sathish — designed, coded, and shipped with AI-assisted tools.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
