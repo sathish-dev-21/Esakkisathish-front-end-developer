@@ -356,7 +356,40 @@ section{
 }
 .contact-socials a:hover{ color: var(--accent); }
 
-/* ===== Footer ===== */
+/* ===== Thank-you page ===== */
+.thankyou{
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 640px;
+}
+
+.thankyou .eyebrow{ justify-content: center; }
+
+.thankyou-terminal{
+  background: #14181F;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(20,24,31,0.18);
+  border: 1px solid #232838;
+  text-align: left;
+  margin: 0 auto 2.5rem;
+  max-width: 420px;
+}
+
+.thankyou-terminal .terminal-body{
+  min-height: auto;
+}
+
+.thankyou h1{
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.thankyou-sub{
+  margin: 0 auto 2rem;
+  max-width: 480px;
+}
+
 .footer{
   text-align: center;
   padding: 2.5rem 8vw;
@@ -364,4 +397,5 @@ section{
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--ink-faint);
-}
+         }
+  
